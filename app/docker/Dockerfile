@@ -2,7 +2,7 @@ FROM php:8.2-cli-alpine
 
 WORKDIR /app
 
-COPY ./../composer.json .
+COPY ./composer.json .
 COPY ./docker/crontab /etc/crontabs/root
 
 RUN apk update

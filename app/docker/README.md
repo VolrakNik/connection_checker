@@ -1,4 +1,6 @@
-## Using docker
-В докерфайле используется composer.json, который лежит в соседней дериктории.
-Чтобы соседняя дериктория была видна, необходимо использовать флаг -f
->docker build -f ./docker/Dockerfile . --tag app
+## Using docker-compose
+In connection_checker/app/docker execute:
+>docker compose build --tag app
+
+Then you need to 'up' container:
+>docker compose up -d
