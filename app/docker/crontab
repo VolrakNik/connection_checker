@@ -1,0 +1,2 @@
+# min	hour	day	month	weekday	command
+*/5     *       *       *       *       php /app/Script/ConnectionChecker.php > /dev/null

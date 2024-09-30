@@ -1,0 +1,16 @@
+app:
+  build:
+    context: .
+  volumes:
+    - .:/app
+    - ./docker/conf/nginx.conf:/etc/nginx/conf.d/default.conf
+    - ./docker/conf/supervisord.local.conf:/etc/supervisor/supervisord.conf
+    - ./docker/conf/supervisor-programs.conf:/etc/supervisor/supervisor-programs.conf
+  ports:
+    - ${APP_PORT:-80}:80
+  environment:
+    - TZ=Europe/Berlin
+  depends_on:
+    - postgres
+    - rabbitmq
+    - amqproxy

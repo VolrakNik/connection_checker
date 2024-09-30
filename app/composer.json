@@ -1,0 +1,26 @@
+{
+  "name": "vendor_name/app",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "gueros"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Script\\": "Script/",
+      "Common\\": "Common/src"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "ext-curl": "*",
+    "monolog/monolog": "3.7.0"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  }
+}
