@@ -13,5 +13,5 @@ set_exception_handler([$errorHandler, 'exceptionHandler']);
 register_shutdown_function([$errorHandler, 'shutdownHandler']);
 use Common\Error\ErrorHandler;
 
-
+sleep(10);
 exit();
